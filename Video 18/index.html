@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 5px solid blue;
+            height: 200px;
+            box-sizing: border-box; /* If we use this one, it means that the height we declared above is for content,padding and border included */
+            /* And if won't use this one(default), it means the height is for the content only
+            so it will usually takes more space */
+            
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 5px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        This is a container
+    </div>
+    <div class="box box2">
+        This is an another container.
+    </div>
+    
+</body>
+</html>

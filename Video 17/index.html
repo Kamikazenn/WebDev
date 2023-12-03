@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+
+    <!-- This is the CSS part -->
+    <style>
+        /* ELEMENT SELECTORS  --> This will be applied for all the divs no matter what */
+        /* div{
+            background-color: red; 
+        } */
+
+        /* CLASS SELECTOR --> This will be applied for all the classes specified */
+        .red{
+            background-color: red;
+        }
+        /* ID SELECTOR --> This will be applies for all the Id's Specified */
+        #green{
+            background-color: rgb(118, 232, 118);
+        }
+        /* CHILD SELECTOR --> This will be applied to the direct child of the parent */
+        div > p{
+            background-color: rgb(104, 205, 205);
+            color: yellow;
+        }
+        /* DESCENDANT SELECTOR --> This will be applied to any descendant of the parent */
+        /* div p{
+            color: blue;
+            background-color: pink;
+        } */
+
+        /* UNIVERSAL SELECTOR --> This will be appplied to all */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* PSEUDO SELECTORS --> This will be applied partially I guess*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        p:first-child{ /* This will be applied if p(Paragaraph tag) is a first child of it's parents*/
+            color: blueviolet; 
+        }
+        /* It means whenever p will be the first child of it's parents then this will be appliedgd */
+
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        This is written inside a div
+    </div>
+    <div class="red">
+        This is another sentence written in a div
+    </div>
+    <div id="green">
+        I am getting out of ideas to write now inside a div
+    </div>
+    <span>
+        well, this is new, cuz now this is written inside a span tag
+    </span>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit temporibus nam iusto possimus quod atque dolorem mollitia, maiores minus veritatis, et, accusamus nulla voluptate numquam quam consectetur error similique voluptatibus blanditiis commodi. Aspernatur eaque impedit delectus, labore, perspiciatis excepturi asperiores vel illum aliquid necessitatibus quae eius, ratione autem sint laborum.
+            </p>
+        </article>
+    </div>
+    <div>
+        <a href="https://google.com">Open Google</a>  <br>
+        <a href="https://facebook.com">Open Facebook</a> <br>
+        <a href="https://youtube.com">Open Youtube</a> <br>
+    </div>
+</body>
+</html> 
