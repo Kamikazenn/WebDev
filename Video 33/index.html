@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling a nav bar</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+        :root{
+            --primary-color: Green;
+            --seconday-color: rgb(133, 190, 133);
+            --Ternary-color: White;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            background-color: var(--primary-color);
+        }
+        body{
+            background-color: var(--seconday-color);
+        }
+        ul li{
+            padding: 20px;
+            font-weight: 900;
+            font-family: 'Poppins', sans-serif;
+        }
+        ul li a{
+            color: var(--Ternary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""> Home </li></a>
+                <li><a href=""> About </li></a>
+                <li><a href=""> Services </li></a>
+                <li><a href=""> Contacts </li></a>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
+

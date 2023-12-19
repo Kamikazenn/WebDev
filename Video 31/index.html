@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body{
+            background-color: greenyellow;
+        }
+        @media only screen and (orientation: portrait){
+            body{
+                border: solid 5px purple;
+            }
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: rgb(86, 139, 230);
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        This is a body and This body got green color as it's background-color....Isn't it cool????
+        Well to be honest.....NO
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+        
+</body>
+</html>
